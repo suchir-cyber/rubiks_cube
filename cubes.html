@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_1.css">
+    <title>Rubiks Cube</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div id="trapezoid">
+                <a href="#About" class="expandHome">Rubiks cube solver</a>
+            </div>
+        </nav>
+    </header>
+    <div class="here">
+        <div class="chat-container">
+            <ul class="chat-list">
+                <li class="message" onmouseover="changeImage(9)" onmouseout="resetImage()">Solved</li>
+                <li class="message" onmouseover="changeImage(1)" onmouseout="resetImage()">Superflip</li>
+                <li class="message" onmouseover="changeImage(2)" onmouseout="resetImage()">Plus-Minus</li>
+                <li class="message" onmouseover="changeImage(3)" onmouseout="resetImage()">Dot</li>
+                <li class="message" onmouseover="changeImage(4)" onmouseout="resetImage()">Cube-In-Cube</li>
+                <li class="message" onmouseover="changeImage(5)" onmouseout="resetImage()">Checker-Board</li>
+                <li class="message" onmouseover="changeImage(6)" onmouseout="resetImage()">Cross</li>
+                <li class="message" onmouseover="changeImage(7)" onmouseout="resetImage()">Black-Mamba</li>
+                <li class="message" onmouseover="changeImage(8)" onmouseout="resetImage()">Anaconda</li>
+                <!-- Add more items as needed -->
+            </ul>
+        </div>
+        <div class="logo-container">
+            <img id="dynamicImage" src="./images/solved1.png" alt="./images/solved1.png">
+        </div>
+    </div>
+
+    <script>
+        function changeImage(index) {
+            const img = document.getElementById('dynamicImage');
+            img.src = `./images/solved${index}.png`;
+        }
+
+        function resetImage() {
+            const img = document.getElementById('dynamicImage');
+            img.src = './images/solved9.png'; // Reset to default image
+        }
+    </script>
+</body>
+
+</html>

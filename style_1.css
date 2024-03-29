@@ -1,0 +1,81 @@
+.here:after {
+    content:"";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 30%;
+    border-left: 2px solid #fff;
+    transform: translate(-50%);
+  }
+
+  
+  div {
+    margin: 10px auto;
+    width: 90%;
+    height: 600px;
+    position:relative;
+    text-align:center;
+  }
+
+  .logo-container {
+    width: 350px; /* Adjust width as needed */
+    height: 350px; /* Adjust height as needed */
+    border-radius: 50%; /* Ensures the logo appears as a circle */
+    background-color: #007bff; /* Example color for the background of the logo container */
+    position: absolute; /* Position the logo container */
+    top: 50%; /* Place the container at the vertical center */
+    right: calc(50% + 1px); /* Place the container beside the line */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    left: 60%;
+}
+
+/* Styles for chat container */
+.chat-container {
+    height: 600px; /* Set desired height */
+    overflow-y: auto; /* Enable vertical scrollbar */
+    padding: 10px; /* Add padding for better readability */
+    border: 1px solid #ddd; /* Add border for clarity */
+    border-radius: 10px;
+    width: 30%; /* Add border radius for rounded corners */
+    left: -500px;
+}
+
+/* Styles for chat list */
+.chat-list {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+}
+
+.message {
+    background-color: #DCF8C6; /* Background color of items */
+    color: #000; /* Text color of items */
+    padding: 10px; /* Add padding for spacing */
+    margin: 20px 0; /* Add margin for spacing between items */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: padding 0.3;
+}
+
+.message:hover{
+    transform: scale(1.04);
+    box-shadow: 0px 4px 8px rgba(214, 2, 251, 0.886);
+}
+
+/* Styles for scrollbar */
+.chat-container::-webkit-scrollbar {
+    width: 8px; /* Set scrollbar width */
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+    background-color: #128C7E; /* Set scrollbar thumb color */
+    border-radius: 4px; /* Set scrollbar thumb border radius */
+}
+
+.chat-container::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Set scrollbar track color */
+}

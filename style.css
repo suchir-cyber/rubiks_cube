@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #053b40;
+}
+
+
+
+body {
+    min-width: 800px;
+    background: #ff00cc;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+    margin:0px;
+  }
+  
+  
+  #trapezoid {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+    border: 80px solid rgba(0,0,0,0);
+    border-top: 0 solid;
+    border-bottom: 100px solid rgba(1, 1, 1, .4);
+    -webkit-border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0;
+    font: normal 100%/normal Arial, Helvetica, sans-serif;
+    color: rgba(0,0,0,0.7);
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    margin-top:-53px;
+    width: 700px;
+    position: relative;
+    transition: all 0.7s ease;
+    padding-left:7%;
+  }
+  
+  #trapezoid a {
+   -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+  }
+  
+  
+  .navbar {
+    position: sticky;
+    top: 0;
+    display:flex;
+    overflow:hidden;
+    justify-content: center;
+    height: 100px;
+  }
+  
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    margin-left: 130px;
+    color: white;
+    text-align: center;
+    padding: 14px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    transition: all 0.5s ease;
+  }
+  
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 150px;
+}
+
+.container h2{
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.content {
+    flex: 1;
+    margin-right: 30px;
+    margin-bottom: 100px;
+}
+
+.logo-container {
+    width: 350px; /* Adjust width as needed */
+    height: 350px; /* Adjust height as needed */
+    border-radius: 50%; /* Ensures the logo appears as a circle */
+    background-color: #007bff; /* Example color for the background of the logo container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.button-89 {
+  --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #eef0f5;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+  margin-top: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible{
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: .05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
+  
+#dynamicImage{
+  border-radius: 50%;
+  width: 100%;
+}
+
+.button-89 a{
+  color: white;
+  text-decoration: none;
+}
